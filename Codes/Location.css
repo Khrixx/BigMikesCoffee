@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:ital,wght@0,500;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(249, 205, 152);
+}
+
+header {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    background: bisque;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; 
+}
+
+.logo-png {
+    width: 60px; 
+    height: 50px; 
+    margin-right: 10px; 
+}
+
+.logo-txt {
+    width: 170px; 
+    height: 70px; 
+    margin-right: 0.1in;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.navbar ul li {
+    margin: 0 15px; 
+    transition: scale 0.2 ease;
+}
+
+.navbar ul li:hover{
+    scale: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.navbar ul li:active{
+    scale: 0.95s;
+}
+
+.navbar a {
+    font-family: 'Montserrat';
+    color: #3c2a00;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    color: #0048ff;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #543200;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #85673dc8;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #321000;
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: bisque;
+}
+
+
+
+#location {
+    background-color: #867a673a;
+    padding: 10px;
+    max-width: 1460px;
+
+}
+
+#location iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.locname{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.locname h1{
+    font-family: 'Lora', serif;
+    font-size: 40px; 
+    color: rgb(37, 22, 1);
+    font-style: italic;
+}
+
+.coname{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.coname h1{
+    font-family: 'Lora', serif;
+    font-size: 40px; 
+    color: rgb(37, 22, 1);
+    font-style: italic;
+}
+
+.menu {
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-1, .btn-2, .btn-3{
+    background-color: #867a673a;
+}
+
+.btn-1, .btn-2, .btn-3 {
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: #423200;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 0 10%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 40%;
+}
+
+.btn-1 img, .btn-2 img, .btn-3 img {
+    display: block;
+    margin: 1px auto 10px;
+    max-width: 70%;
+    height: auto;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}

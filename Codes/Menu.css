@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:ital,wght@0,500;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(249, 205, 152);
+}
+
+header {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    background: bisque;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; 
+}
+
+.logo-png {
+    width: 60px; 
+    height: 50px; 
+    margin-right: 10px; 
+}
+
+.logo-txt {
+    width: 170px; 
+    height: 70px; 
+    margin-right: 0.1in;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.navbar ul li {
+    margin: 0 15px; 
+    transition: scale 0.2 ease;
+}
+
+.navbar ul li:hover{
+    scale: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.navbar ul li:active{
+    scale: 0.95s;
+}
+
+.navbar a {
+    font-family: 'Montserrat';
+    color: #3c2a00;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    color: #0048ff;
+}
+
+.headline {
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.headline h1 {
+    font-family: 'Lora', serif;
+    font-size: 36px; 
+    color: #543200; 
+    margin-bottom: 10px; 
+}
+
+.headline p {
+    font-size: 18px;
+    color: #202020; 
+    line-height: 1.6; 
+}
+
+.IcedCoffee {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+.IcedCoffee h3{
+    margin-top: 30px;
+    font-size:2rem;
+    font-style: italic;
+    color: #bb9d72;
+}
+
+
+
+.cardsets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 63vh; 
+    padding: 2%;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #543200;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 200px; 
+    min-width: 150px; 
+    height: 300px; 
+}
+
+.card img:hover {
+    transform: scale(1.05); 
+}
+
+.card img {
+    position: relative;
+    vertical-align: top;
+    max-width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+
+
+.card figcaption {
+    text-align: center;
+    color: rgb(67, 40, 14);
+    background: #ffffff;
+    padding: 24px 55px;
+    font-weight: 500;
+}
+
+.card figcaption h2 {
+    font-size: 17px;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+
+.card figcaption p {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    line-height: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #543200;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #85673dc8;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #321000;
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: bisque;
+}
+
+.NonCoffee {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-left: 22rem;
+}
+
+.NonCoffee h4, h5{
+    font-size:2rem;
+    font-style: italic;
+}
+
+#ICV{
+    background-color: #432314;
+}
+
+.Ncardsets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center   ;
+    align-items: flex-start;
+    min-height: 50vh; 
+    padding: 2%;
+    gap: 10px;
+}
+
+.Ncard {
+    position: relative;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    flex-direction: column;
+    color: #543200;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 200px; 
+    min-width: 150px; 
+    height: 300px;
+}
+
+.Ncard img:hover {
+    transform: scale(1.05); 
+}
+
+.Ncard img {
+    position: relative;
+    vertical-align: top;
+    max-width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+.Ncard figcaption {
+    text-align: center;
+    color: rgb(67, 40, 14);
+    background: #ffffff;
+    padding: 15px 55px;
+    font-weight: 500;
+}
+
+.Ncard figcaption h2 {
+    font-size: 17px;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+
+.Ncard figcaption p {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    line-height: 20px;
+}
+
+
+
+.RicePasta {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5px;
+}
+
+.RicePasta h6{
+    margin-top: 30px;
+    font-size:2rem;
+    font-style: italic;
+    color: #ffffff;
+}
+
+#RCF{
+    background-color: #432314;
+}
+
+.Rcardsets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center   ;
+    align-items: flex-start;
+    min-height: 48vh; 
+    padding: 2%;
+    gap: 10px; 
+}
+
+.Rcard {
+    position: relative;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    flex-direction: column;
+    color: #543200;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 200px; 
+    min-width: 150px; 
+    height: 300px; 
+}
+
+.Rcard img:hover {
+    transform: scale(1.05); 
+}
+
+.Rcard img {
+    position: relative;
+    vertical-align: top;
+    max-width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+.Rcard figcaption {
+    text-align: center;
+    color: rgb(67, 40, 14);
+    background: #ffffff;
+    padding: 15px 55px;
+    font-weight: 500;
+}
+
+.Rcard figcaption h2 {
+    font-size: 17px;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+
+.Rcard figcaption p {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    line-height: 20px;
+}
+
+
+
+.Pastries {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+.Pastries h3{
+    margin-top: 30px;
+    font-size:2rem;
+    font-style: italic;
+    color: #251807;
+}
+
+
+
+.Pcardsets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 53vh; 
+    padding: 2%;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.Pcard {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #543200;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 200px; 
+    min-width: 150px; 
+    height: 300px; 
+}
+
+.Pcard img:hover {
+    transform: scale(1.05); 
+}
+
+.Pcard img {
+    position: relative;
+    vertical-align: top;
+    max-width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+
+
+.Pcard figcaption {
+    text-align: center;
+    color: rgb(67, 40, 14);
+    background: #ffffff;
+    padding: 24px 55px;
+    font-weight: 500;
+}
+
+.Pcard figcaption h2 {
+    font-size: 17px;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+
+.Pcard figcaption p {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    line-height: 20px;
+}
